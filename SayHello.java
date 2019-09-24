@@ -1,10 +1,11 @@
 public class SayHello{
 	public static void main(String[] args){
 		System.out.println("Below is function of sayhello");
-		SayHello(sum());
+		sayHello(sum());
 	}
 	
-	public static int sum(){
+	public static void sayHello(int sum){
+
 		System.out.println("say hello!"+sum);
 	}
 	
@@ -15,3 +16,4 @@ public class SayHello{
 		}
 		return sum;
 	}
+}
