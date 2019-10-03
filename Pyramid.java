@@ -1,19 +1,16 @@
+import java.util.Scanner;
+
 public class Pyramid{
 	public static void main(String[] args){
-		//TODO auto-generated method stub
-		int i = 5;
-		for(int j =1; j<=i; j++){
-			int times = (2*j)-1;
-			int time=0;
-			while(time!=(i-j))
-			{
+		System.out.println("please input pyramid height:");
+		Scanner C = new Scanner(System.in);
+		int a = C.nextInt();
+		for(int i=1;i<=a;i++){
+			for(int y=1;y<=a-i;y++)
 				System.out.print(" ");
-				time++;
-			}
-			while(time != 0){
-				System.out.print("*");
-				times--;
-			}
+			for(int x=1;x<=2*i-1;x++)
+				System.out.print("0");
+			
 			System.out.print("\n");
 		}
 	}
